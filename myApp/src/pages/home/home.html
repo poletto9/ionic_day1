@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="fname" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Surename</ion-label>
+    <ion-input type="text" [(ngModel)]="lname" value=""></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button full (click)="test()">Submit</button>
+<p>Name : {{fname}}</p>
+<p>Surename : {{lname}}</p>
+</ion-content>
